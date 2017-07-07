@@ -1,5 +1,7 @@
 package com.example.rishabh.gettinbored.model;
 
+import java.util.ArrayList;
+
 /**
  * Created by RISHABH on 06-07-2017.
  */
@@ -8,10 +10,9 @@ public class newsclass {
     String status;
     String source;
     String sortBy;
-    articles articles;
+    ArrayList<articles> articles;
 
-    public newsclass(String status, String source, String sortBy, articles articles) {
-
+    public newsclass(String status, String source, String sortBy, ArrayList<com.example.rishabh.gettinbored.model.articles> articles) {
         this.status = status;
         this.source = source;
         this.sortBy = sortBy;
@@ -30,7 +31,7 @@ public class newsclass {
         return sortBy;
     }
 
-    public articles getArticles() {
+    public ArrayList<com.example.rishabh.gettinbored.model.articles> getArticles() {
         return articles;
     }
 }
